@@ -9,15 +9,12 @@ public class ConversorArrayToList {
     public static void main(String[] args) {
 
         String[] liguagens = {"Java", "PHP", "PYTHON", "C", "Dart"};
-        System.out.println("Array[]: " + Arrays.toString(liguagens));
-       /* for(String l: liguagens) {
-            System.out.println(l);
-        }*/
+        System.out.println("Array: " + Arrays.toString(liguagens));
 
-        List<String> lista = new ArrayList<String>();
+        List<String> lista = new ArrayList<>();
         for (String l : liguagens) {
             lista.add(l);
         }
-        System.out.println("Array[] convertido em List<>: " + Arrays.toString(liguagens));
+        System.out.println("Array convertido em List<>: " + Arrays.toString(liguagens));
     }
 }
